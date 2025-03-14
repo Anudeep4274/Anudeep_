@@ -1,0 +1,416 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for Profile */
+.profile-container {
+    background: linear-gradient(to right,#2c3031, #7db4ce);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Profile Information Section */
+.profile-info {
+    display: flex;
+    justify-content:center
+
+}
+
+.profile-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+   
+}
+
+.profile-details {
+
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.profile-details h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-details ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-details a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.profile-details a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.skills .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list ul li {
+    font-size: 18px;
+    color: #061824;
+    margin-bottom: 8px;
+}
+
+/* Education Section */
+.education {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.education .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.projects .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 30%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h4 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skills, .education, .projects, .contact {
+        padding: 20px;
+    }
+}
+
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55, #0f0c29);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: #080505;
+    line-height: 1.6;
+}
+h1{
+    background: linear-gradient(to right, rgba(240, 6, 123, 0.6), rgba(0, 255, 255, 0.6));
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 20px rgba(216, 125, 178, 0.8);
+    animation: fadeIn 1s ease-in-out, pulseGlow 2s infinite alternate;
+}
+body {
+    background-color: #fef9f5;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 400px;
+    height: 400px;
+    background: #ffb6c1; /* Soft pink */
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #b6ffdb; /* Soft mint */
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(80px);
+    z-index: -1;
+}
+.Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.Skills li {
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: black;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.6);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.Skills li::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    top: -150%;
+    left: -150%;
+    transition: all 0.4s ease-in-out;
+}
+
+.Skills li:hover::before {
+    top: -50%;
+    left: -50%;
+}
+
+.Skills li:hover {
+    background: linear-gradient(to right, #ffdd57, #ff0099);
+    box-shadow: 0px 0px 20px rgba(255, 221, 87, 0.8);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 0, 150, 0.6), rgba(0, 255, 255, 0.6));
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(255, 0, 150, 0.8);
+}
+
+/* Floating Animated Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: black;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px rgba(255, 0, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    animation: floating 3s infinite ease-in-out, neonPulse 2s infinite alternate;
+}
+
+.floating-button:hover {
+    background: linear-gradient(to right, #ffdd57, #ff0099);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(255, 221, 87, 0.8);
+}
+.profile-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.profile-image {
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.6);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.profile-image::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    top: -150%;
+    left: -150%;
+    transition: all 0.4s ease-in-out;
+}
+
+.profile-image:hover::before {
+    top: -50%;
+    left: -50%;
+}
+
+.profile-image:hover {
+    background: linear-gradient(to right, #ffdd57, #ff0099);
+    box-shadow: 0px 0px 20px rgba(255, 221, 87, 0.8);
+    transform: scale(1.1);
+}
