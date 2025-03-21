@@ -22,7 +22,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone 
+git clone  https://anudeep4274.github.io/Anudeep_/
 Open the project folder.
 Open index.html in a browser.
 Usage
