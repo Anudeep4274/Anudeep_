@@ -798,3 +798,92 @@ p {
 	font-size: 20px;
 	font-style: normal;
 }
+/* General Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    #header .nav-list ul {
+        left: 100%; /* Hide the menu by default */
+    }
+    #header .nav-list ul.active {
+        left: 0; /* Show the menu when active */
+    }
+
+    /* Hero Section */
+    #hero h1 {
+        font-size: 5rem; /* Adjust font size for smaller screens */
+    }
+    #hero .profile-image img {
+        width: 250px; /* Reduce image size */
+        height: 250px;
+    }
+
+    /* Skills Section */
+    #skills .skills-item {
+        flex-basis: 100%; /* Full width for skills items on mobile */
+        margin: 10px 0;
+    }
+
+    /* Projects Section */
+    #projects .project-item {
+        flex-direction: column; /* Stack project info and image vertically */
+    }
+    #projects .project-img {
+        height: 200px; /* Reduce image height */
+    }
+
+    /* About Section */
+    #about .col-right {
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    /* Contact Section */
+    #contact .contact-items {
+        flex-direction: column; /* Stack contact items vertically */
+    }
+    #contact .contact-item {
+        width: 100%; /* Full width for contact items */
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    #footer h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+}
+
+/* Adjustments for Very Small Screens (e.g., phones) */
+@media only screen and (max-width: 480px) {
+    /* Hero Section */
+    #hero h1 {
+        font-size: 3.5rem; /* Further reduce font size */
+    }
+
+    /* Skills Section */
+    #skills .skills-title {
+        font-size: 3rem; /* Reduce title size */
+    }
+
+    /* Projects Section */
+    #projects .project-info h1 {
+        font-size: 2.5rem; /* Reduce project title size */
+    }
+
+    /* About Section */
+    #about .col-right h2 {
+        font-size: 1.5rem; /* Reduce subtitle size */
+    }
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
